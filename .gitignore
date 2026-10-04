@@ -1,0 +1,69 @@
+# Environment / secrets (never commit real keys)
+.env
+.env.*
+!.env.example
+.env.local
+.env.*.local
+frontend/.env
+frontend/.env.local
+frontend/.env*.local
+
+# Python
+.venv/
+venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.coverage.*
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# SQLite databases + local DB sidecars
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+data/*.log
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Evidence (local run artifacts — keep folder via .gitkeep)
+evidence/*/
+!evidence/.gitkeep
+
+# Local demo helpers / scratch
+run_id_*.txt
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Misc
+*.log
+.turbo/
+Engineering_Notes.md
